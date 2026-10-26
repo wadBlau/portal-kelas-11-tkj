@@ -8,9 +8,23 @@ export function Mark({ className }: { className?: string }) {
       xmlns="http://www.w3.org/2000/svg"
     >
       <rect width="24" height="24" rx="7" fill="currentColor" />
-      <rect x="6.2" y="5.6" width="4" height="12.8" rx="2" fill="currentColor" />
+      <rect
+        x="6.2"
+        y="5.6"
+        width="4"
+        height="12.8"
+        rx="2"
+        style={{ fill: "var(--accent-ink)" }}
+      />
       <g className="mark-door">
-        <rect x="13.8" y="5.6" width="4" height="12.8" rx="2" fill="currentColor" />
+        <rect
+          x="13.8"
+          y="5.6"
+          width="4"
+          height="12.8"
+          rx="2"
+          style={{ fill: "var(--accent-ink)" }}
+        />
         <circle cx="16.6" cy="12" r="0.62" fill="currentColor" />
       </g>
     </svg>
