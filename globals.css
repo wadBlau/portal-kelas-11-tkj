@@ -22,6 +22,7 @@
   --accent: #1b1c19;
   --accent-ink: #ffffff;
   --accent-soft: rgba(27, 28, 25, 0.08);
+  --on-accent-soft: rgba(255, 255, 255, 0.16);
 
   --positive: #2f7a45;
   --warning: #8a5a00;
@@ -68,6 +69,7 @@
     --accent: #f5f5f3;
     --accent-ink: #1b1c19;
     --accent-soft: rgba(245, 245, 243, 0.12);
+    --on-accent-soft: rgba(27, 28, 25, 0.12);
 
     --positive: #4ade80;
     --warning: #fbbf24;
@@ -102,6 +104,7 @@
   --accent: #f5f5f3;
   --accent-ink: #1b1c19;
   --accent-soft: rgba(245, 245, 243, 0.12);
+  --on-accent-soft: rgba(27, 28, 25, 0.12);
 
   --positive: #4ade80;
   --warning: #fbbf24;
@@ -135,6 +138,7 @@
   --accent: #1b1c19;
   --accent-ink: #ffffff;
   --accent-soft: rgba(27, 28, 25, 0.08);
+  --on-accent-soft: rgba(255, 255, 255, 0.16);
 
   --positive: #2f7a45;
   --warning: #8a5a00;
@@ -204,7 +208,7 @@ a {
 
 ::selection {
   background: var(--accent);
-  color: #ffffff;
+  color: var(--accent-ink);
 }
 
 :focus-visible {
@@ -438,18 +442,18 @@ a {
 
 .nav-link.is-active {
   background: var(--accent);
-  color: #ffffff;
+  color: var(--accent-ink);
 }
 
 .nav-link.is-active:hover {
   background: var(--accent);
-  color: #ffffff;
+  color: var(--accent-ink);
   transform: none;
 }
 
 .nav-link.is-active .nav-icon {
-  background: rgba(255, 255, 255, 0.16);
-  color: #ffffff;
+  background: var(--on-accent-soft);
+  color: var(--accent-ink);
   transform: none;
 }
 
@@ -920,11 +924,12 @@ a {
 
 .btn-primary {
   background: var(--accent);
-  color: #ffffff;
+  color: var(--accent-ink);
 }
 
 .btn-primary:hover {
   background: var(--accent-ink);
+  color: var(--accent);
 }
 
 .btn-primary:hover svg {
@@ -1000,7 +1005,7 @@ a {
   padding: 0 9px;
   border-radius: 7px;
   background: var(--text);
-  color: #ffffff;
+  color: var(--accent-ink);
   font-size: 12px;
   font-weight: 600;
   line-height: 1;
@@ -1334,7 +1339,7 @@ a {
   height: 42px;
   border-radius: 999px;
   background: var(--text);
-  color: #ffffff;
+  color: var(--accent-ink);
   font-size: 18px;
   font-weight: 800;
   transform: rotate(8deg);
