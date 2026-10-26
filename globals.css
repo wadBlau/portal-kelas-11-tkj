@@ -39,6 +39,7 @@
   --surface-rgb: 251, 251, 250;
   --raised-rgb: 242, 243, 239;
   --text-rgb: 27, 28, 25;
+  --accent-ink-rgb: 255, 255, 255;
   --border-rgb: 222, 220, 212;
 
   --radius-panel: 24px;
@@ -85,6 +86,7 @@
     --surface-rgb: 27, 27, 26;
     --raised-rgb: 34, 34, 33;
     --text-rgb: 245, 245, 243;
+    --accent-ink-rgb: 27, 28, 25;
     --border-rgb: 51, 51, 50;
   }
 }
@@ -120,6 +122,7 @@
   --surface-rgb: 27, 27, 26;
   --raised-rgb: 34, 34, 33;
   --text-rgb: 245, 245, 243;
+  --accent-ink-rgb: 27, 28, 25;
   --border-rgb: 51, 51, 50;
 }
 
@@ -154,6 +157,7 @@
   --surface-rgb: 251, 251, 250;
   --raised-rgb: 242, 243, 239;
   --text-rgb: 27, 28, 25;
+  --accent-ink-rgb: 255, 255, 255;
   --border-rgb: 222, 220, 212;
 }
 
@@ -1077,7 +1081,7 @@ a {
   bottom: -34px;
   width: 30px;
   border-radius: 16px;
-  background: rgba(var(--text-rgb), 0.15);
+  background: rgba(var(--accent-ink-rgb), 0.15);
   transition: transform 520ms var(--ease-out);
 }
 
@@ -1095,7 +1099,7 @@ a {
   position: relative;
   width: 78px;
   height: 112px;
-  border: 2px solid rgba(var(--text-rgb), 0.7);
+  border: 2px solid rgba(var(--accent-ink-rgb), 0.7);
   border-radius: 40px 40px 9px 9px;
   transform-origin: 12% 50%;
   transition: transform 520ms var(--ease-out);
@@ -1109,7 +1113,7 @@ a {
   width: 6px;
   height: 6px;
   border-radius: 999px;
-  background: rgba(var(--text-rgb), 0.95);
+  background: rgba(var(--accent-ink-rgb), 0.95);
 }
 
 @media (hover: hover) and (pointer: fine) {
