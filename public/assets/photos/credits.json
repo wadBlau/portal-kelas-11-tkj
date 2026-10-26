@@ -1,0 +1,98 @@
+[
+ {
+  "file": "public/assets/photos/kelas-hero.jpg",
+  "media": "image",
+  "ref": "commons:175925178",
+  "title": "A classroom with students at the College of Medicine, FUASK",
+  "creator": "Kambai Akau",
+  "license": "CC BY-SA 4.0",
+  "licenseCode": "by-sa",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "creditRequired": true,
+  "page": "https://commons.wikimedia.org/wiki/File:A_classroom_with_students_at_the_College_of_Medicine,_FUASK.jpg",
+  "via": "Wikimedia Commons",
+  "width": 1920,
+  "height": 1280,
+  "bytes": 327193,
+  "credit": "\"A classroom with students at the College of Medicine, FUASK\" by Kambai Akau, CC BY-SA 4.0, via Wikimedia Commons",
+  "notes": [
+   "Share-alike: an altered version (recoloured, combined with other pictures) must be shared under the same licence."
+  ]
+ },
+ {
+  "file": "public/assets/photos/siswa-sedang-belajar.jpg",
+  "media": "image",
+  "ref": "commons:192811575",
+  "title": "Siswa sedang belajar",
+  "creator": "Dicky Herlambang",
+  "license": "CC0",
+  "licenseCode": "cc0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "creditRequired": false,
+  "page": "https://commons.wikimedia.org/wiki/File:Siswa_sedang_belajar.jpg",
+  "via": "Wikimedia Commons",
+  "width": 1920,
+  "height": 1280,
+  "bytes": 482219,
+  "credit": "\"Siswa sedang belajar\" by Dicky Herlambang, CC0, via Wikimedia Commons",
+  "notes": []
+ },
+ {
+  "file": "public/assets/photos/murid-menulis-labkom.jpg",
+  "media": "image",
+  "ref": "commons:132713113",
+  "title": "Murid Menulis Labkom",
+  "creator": "Yohanadisetiawanbjn",
+  "license": "CC BY-SA 4.0",
+  "licenseCode": "by-sa",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "creditRequired": true,
+  "page": "https://commons.wikimedia.org/wiki/File:Murid_Menulis_Labkom.jpg",
+  "via": "Wikimedia Commons",
+  "width": 1920,
+  "height": 1440,
+  "bytes": 530030,
+  "credit": "\"Murid Menulis Labkom\" by Yohanadisetiawanbjn, CC BY-SA 4.0, via Wikimedia Commons",
+  "notes": [
+   "Share-alike: an altered version (recoloured, combined with other pictures) must be shared under the same licence."
+  ]
+ },
+ {
+  "file": "public/assets/photos/belajar-kelompok.jpg",
+  "media": "image",
+  "ref": "commons:134878835",
+  "title": "Belajar Kelompok",
+  "creator": "Galeri ega",
+  "license": "CC BY-SA 4.0",
+  "licenseCode": "by-sa",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "creditRequired": true,
+  "page": "https://commons.wikimedia.org/wiki/File:Belajar_Kelompok.jpg",
+  "via": "Wikimedia Commons",
+  "width": 1920,
+  "height": 1280,
+  "bytes": 550451,
+  "credit": "\"Belajar Kelompok\" by Galeri ega, CC BY-SA 4.0, via Wikimedia Commons",
+  "notes": [
+   "Share-alike: an altered version (recoloured, combined with other pictures) must be shared under the same licence."
+  ]
+ },
+ {
+  "file": "public/assets/photos/foto-siswa-sedang-belajar.jpg",
+  "media": "image",
+  "ref": "commons:192811565",
+  "title": "Foto siswa sedang belajar",
+  "creator": "Dicky Herlambang",
+  "license": "CC0",
+  "licenseCode": "cc0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "creditRequired": false,
+  "page": "https://commons.wikimedia.org/wiki/File:Foto_siswa_sedang_belajar.jpg",
+  "via": "Wikimedia Commons",
+  "width": 1920,
+  "height": 1440,
+  "bytes": 595469,
+  "credit": "\"Foto siswa sedang belajar\" by Dicky Herlambang, CC0, via Wikimedia Commons",
+  "notes": []
+ }
+]

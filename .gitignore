@@ -1,0 +1,11 @@
+node_modules/
+.next/
+out/
+build/
+*.local
+.env
+.env*.local
+next-env.d.ts
+*.tsbuildinfo
+.taste-skill/
+.dev.log
