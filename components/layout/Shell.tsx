@@ -54,6 +54,8 @@ function NavList({
   onNavigate?: () => void;
 }) {
   const hubActive = pathname === "/dashboard";
+  const internalModuls = moduls.filter((m) => m.url.startsWith("/"));
+  const externalModuls = moduls.filter((m) => !m.url.startsWith("/"));
 
   return (
     <nav aria-label="Navigasi utama" className="rail-nav">
@@ -74,13 +76,35 @@ function NavList({
               <ChevronRight className="nav-arrow" size={15} aria-hidden />
             </Link>
           </li>
+          {internalModuls.map((m) => {
+            const active = pathname === m.url;
+            const Icon: LucideIcon =
+              navItems.find((n) => n.id === m.id)?.icon ?? LayoutDashboard;
+
+            return (
+              <li key={m.id}>
+                <Link
+                  href={m.url}
+                  onClick={onNavigate}
+                  className={clsx("nav-link", active && "is-active")}
+                  aria-current={active ? "page" : undefined}
+                >
+                  <span className="nav-icon">
+                    <Icon size={17} strokeWidth={1.8} aria-hidden />
+                  </span>
+                  <span className="nav-label">{m.label}</span>
+                  <ChevronRight className="nav-arrow" size={15} aria-hidden />
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </div>
 
       <div className="nav-group">
         <p className="rail-label">Modul</p>
         <ul className="nav-list">
-          {moduls.map((m) => {
+          {externalModuls.map((m) => {
             const live = m.status === "online";
             const Icon: LucideIcon =
               navItems.find((n) => n.id === m.id)?.icon ?? LayoutDashboard;

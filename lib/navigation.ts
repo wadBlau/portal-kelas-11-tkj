@@ -4,11 +4,13 @@ import {
   ClipboardCheck,
   Users,
   Calendar,
+  Camera,
 } from "lucide-react";
 import type { NavItem, Modul, Role, ModulStatus } from "@/types";
 
 const navItems: NavItem[] = [
   { id: "hub", label: "Hub Utama", icon: LayoutDashboard },
+  { id: "galeri", label: "Galeri Kelas", icon: Camera },
   { id: "kas", label: "Uang Kas Kelas", icon: Wallet },
   { id: "piket", label: "Absen Piket", icon: ClipboardCheck },
   { id: "ekskul", label: "Absen Ekskul", icon: Users },
@@ -16,6 +18,15 @@ const navItems: NavItem[] = [
 ];
 
 const moduls: Modul[] = [
+  {
+    id: "galeri",
+    label: "Galeri Kelas",
+    desc: "Kumpulan momen 11TKJ1, dari papan tulis sampai jam istirahat",
+    url: "/dashboard/galeri",
+    badge: "Foto",
+    roles: ["siswa", "wali_kelas"],
+    status: "online",
+  },
   {
     id: "kas",
     label: "Uang Kas Kelas",

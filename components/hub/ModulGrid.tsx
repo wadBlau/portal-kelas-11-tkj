@@ -1,8 +1,10 @@
 import type { CSSProperties } from "react";
 import type { LucideIcon } from "lucide-react";
+import Link from "next/link";
 import {
   ArrowUpRight,
   Calendar,
+  Camera,
   ClipboardCheck,
   Lock,
   Users,
@@ -14,6 +16,7 @@ import { STATUS_LABELS } from "@/lib/navigation";
 import Reveal from "@/components/ui/Reveal";
 
 const ICONS: Record<string, LucideIcon> = {
+  galeri: Camera,
   kas: Wallet,
   piket: ClipboardCheck,
   ekskul: Users,
@@ -21,6 +24,7 @@ const ICONS: Record<string, LucideIcon> = {
 };
 
 const TINT: Record<string, { bg: string; ink: string }> = {
+  galeri: { bg: "#141413", ink: "#f5f5f3" },
   piket: { bg: "#ffffff", ink: "#1b1c19" },
   ekskul: { bg: "#1b1c19", ink: "#ffffff" },
   jadwal: { bg: "#ffffff", ink: "#1b1c19" },
@@ -88,6 +92,14 @@ function Door({ modul }: { modul: Modul }) {
   } as CSSProperties;
 
   if (live) {
+    if (modul.url.startsWith("/")) {
+      return (
+        <Link href={modul.url} className="door-card is-live" style={style}>
+          {body}
+        </Link>
+      );
+    }
+
     return (
       <a
         href={modul.url}
@@ -132,7 +144,7 @@ export default function ModulGrid({
           <div>
             <h2 id="modul-title">Pintu masuk</h2>
             <p>
-              Empat modul kelas.
+              {moduls.length} modul kelas.
               {allLive ? "" : " Tautan resmi menyusul."}
             </p>
           </div>

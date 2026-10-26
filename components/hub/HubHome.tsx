@@ -71,8 +71,8 @@ export default function HubHome({
             {greeting(now.getHours())}, {CLASS_PREFIX}.
           </h1>
           <p className="hero-lead">
-            Kas, piket, ekskul, dan jadwal kelas sekarang punya satu papan.
-            Semua yang perlu dibuka ada di sini.
+            Kas, piket, ekskul, jadwal, dan galeri kelas sekarang punya satu
+            papan. Semua yang perlu dibuka ada di sini.
           </p>
 
           <div className="hero-actions">

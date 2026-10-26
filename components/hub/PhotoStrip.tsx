@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Reveal from "@/components/ui/Reveal";
 
 const PHOTOS = [
@@ -73,7 +74,12 @@ export default function PhotoStrip() {
             <h2 id="momen-title">Momen kelas</h2>
             <p>Foto contoh sementara. Foto asli kelas menyusul.</p>
           </div>
-          <span className="section-side">4 foto</span>
+          <Link
+            href="/dashboard/galeri"
+            className="section-side transition-colors hover:text-[var(--text)]"
+          >
+            Buka galeri ↗
+          </Link>
         </div>
       </Reveal>
 
