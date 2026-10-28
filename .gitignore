@@ -9,3 +9,5 @@ next-env.d.ts
 *.tsbuildinfo
 .taste-skill/
 .dev.log
+.vercel/
+!.env.example
