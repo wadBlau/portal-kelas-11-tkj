@@ -1,8 +1,10 @@
 import type { NextAuthOptions } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import type { Role } from "@/types";
+import { getAuthSecret } from "@/lib/auth-secret";
 
 export const authOptions: NextAuthOptions = {
+  secret: getAuthSecret(),
   providers: [
     CredentialsProvider({
       name: "credentials",

@@ -30,10 +30,14 @@ Buka http://localhost:3000
 
    | Name             | Value                                                        |
    | ---------------- | ------------------------------------------------------------ |
-   | `NEXTAUTH_SECRET` | string acak, generate dengan `node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"` |
+   | `NEXTAUTH_SECRET` | string acak, generate dengan `node -p "require('crypto').randomBytes(32).toString('hex')"` |
 
    `NEXTAUTH_URL` **tidak perlu** diisi di Vercel (otomatis terdeteksi).
    Jangan copy `.env.local` dari laptop ke Vercel, isinya `localhost`.
+
+   > Tanpa `NEXTAUTH_SECRET`, aplikasi tetap jalan memakai **demo secret** dari
+   > `lib/auth-secret.ts` (ada warning di log). Itu cuma buat demo kelas —
+   > untuk pemakaian nyata, secret **wajib** diset lewat env.
 
 5. **Deploy**. Tunggu status **Ready**, lalu buka domain `https://<project>.vercel.app`.
 
